@@ -1,0 +1,11 @@
+{{ template "base" . }}
+
+
+{{ define "content" }}
+    <div class="container">
+        <h1>This is the home page</h1>
+        <p>This is some text</p>
+        <h3>Data: {{ index .StringMap "test" }}</h3>
+        <pre>{{ printf "%+v" . }}</pre>
+    </div>
+{{ end }}
